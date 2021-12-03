@@ -54,4 +54,13 @@ public class findAnagrams_438 {
     return indices;
 
   }
+
+  public static void main(String args[]){
+
+    findAnagrams_438 obj = new findAnagrams_438();
+    obj.findAnagrams("cbaebabacd","abc");
+
+  }
+
+
 }
