@@ -1,0 +1,24 @@
+sliding window patterns : 
+
+#pattern1 
+
+if we have to find a string with say fixed number of letters rather than finding longest substring, string with atmost k distinct characters 
+for all those length might differ , if the length is gonna remain the same, then we can use a fixed sliding window. so whenever the length exceeds the sliding window length 
+we can shrink the left and expand the right. 
+
+#pattern2 
+whenever you are being asked find the longest string , then the way you shrink the sliding window depends on the condition asked, like say - 
+without repeating characters then - since we would be having a hashmap to maintain the repeating characters ,we have to shrink the window as soon as we saw the 
+repeating character or something. similarly the condition can be k distinct characters. 
+
+lingest substring without repeating characters : 
+left , right , hashmap
+
+expand -
+keep putting the characters in the hashmap and expanding the right and also keep calculating the maxLength. 
+
+shrink - 
+when the character is already seen,
+keep shrinking until the left points skips the current seen character
+abcdc keep shrinking until left reaches d. 
+
