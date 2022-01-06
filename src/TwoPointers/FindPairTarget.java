@@ -3,11 +3,16 @@ package TwoPointers;
 /**
  * Given a sorted array A (sorted in ascending order),
  * having N integers, find if there exists any pair of elements (A[i], A[j]) such that their sum is equal to X.
- * {10, 20, 35, 50, 75, 80}
+ * {10, 20, 35,20,50 50, 75, 80}
+ * {10, 20, 20, 35,50, 50, 75, 80}
  * X = 70
  * output:
  * 1
  * @link https://www.geeksforgeeks.org/two-pointers-technique/
+ *
+ *
+ * time complexity - O(n)
+ * space complexity - O(1). // did not use any additional data structure.
  */
 public class FindPairTarget {
 
@@ -48,7 +53,7 @@ public class FindPairTarget {
   public static void main(String args[]){
 
     FindPairTarget obj = new FindPairTarget();
-    int[] arr = new int[]{10,20,35,50,75,80};
+    int[] arr = new int[]{10,20,20,35,50,50,75,80};
     System.out.println(obj.findCountOfPairSum(arr,70));
   }
 
