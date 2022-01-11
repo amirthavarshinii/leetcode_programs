@@ -1,3 +1,14 @@
+/**
+ * Given an array of integers, return true or false if the numbers in the array go from 0... (N - 1) where N is the length of the array
+ *
+ * Linear time, constant space is a requirement
+ *
+ * example:
+ * [0,1,2,3,4] = true;
+ * [4,2,1,0,3] = true;
+ * [0,1,5,2,4] = false;
+ */
+
 package meta;
 
 public class Solution {
